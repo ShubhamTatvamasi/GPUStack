@@ -33,6 +33,11 @@ kubectl delete apiservice \
   v1beta2.visibility.kueue.x-k8s.io
 ```
 
+```
+kubectl delete \
+  mutatingwebhookconfiguration/kueue-mutating-webhook-configuration \
+  validatingwebhookconfiguration/kueue-validating-webhook-configuration
+```
 
 ```bash
 kubectl delete ns gpustack-system
